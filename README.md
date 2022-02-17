@@ -77,7 +77,7 @@ dtos2= service2.getAllMovieSearch();
 #### * 회원정보 및 예매 내역 조회
 
 - DB에 저장된 회원정보와 예매 내역을 조회합니다.
-- 정보수정을 누르면 수정창으로 이동합니다.
+- 정보수정을 누르면 수정 페이지로 이동합니다.
 - 예매내역이 있을 경우 예매 내역만큼 chk값이 증가하고 출력됩니다.
 
 <img src="img/memberInfo.png" width="400" height="460">
