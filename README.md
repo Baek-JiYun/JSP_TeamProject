@@ -14,5 +14,5 @@
 
 - 메인화면
 
-<img src="img/main.png">
+<img src="img/Main.png">
 
