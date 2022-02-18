@@ -28,7 +28,7 @@
 
 - 검색된 단어와 DB의 Title을 비교해 일치한 값을 읽어와 화면에 보여줍니다.
 
-```
+```jsp
 /// search.jsp
 dtos2= service2.getAllMovieSearch();
 	
@@ -82,7 +82,7 @@ dtos2= service2.getAllMovieSearch();
 
 <img src="img/memberInfo.png" width="400" height="460">
 
-```
+```jsp
 <%
 int chk=0; // 예매 내역 체크변수
 dtos2=service2.getAllMovie();
