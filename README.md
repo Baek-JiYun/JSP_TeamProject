@@ -1,32 +1,43 @@
-# 💡 JSP 영화예매 프로젝트
-- JSP는 Eclipse를 사용해 진행하였습니다.
-- DataBase는 Oracle을 사용해 진행하였습니다.
-- 부분 Bootstrap을 사용해 진행하였습니다.
-- 기존 Java+DB 영화예매 프로젝트를 JSP프로젝트로 업그레이드 구현하였습니다.
+# 🎬 JSP 영화예매 프로젝트
+- <b>Language</b> : <img alt="JAVA" src="https://img.shields.io/badge/JAVA-007396?style=flat-square&logo=java&logoColor=white"/> <img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"/> <img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"/>
+- <b>Database</b> : <img alt="Oracle" src ="https://img.shields.io/badge/Oracle-%23F00000.svg?style=flat-square&logo=oracle&logoColor=white" />
+- <b>Tool</b> : <img alt="Eclipse IDE" src="https://img.shields.io/badge/Eclipse IDE-2C2255?style=flat-square&logo=Eclipse IDE&logoColor=white"/>
+- <b>ETC</b> : <img alt="Bootstrap" src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=Bootstrap&logoColor=white"/>
+
+
 <br>
 
-## <제작기간 및 개발인원>
+## 🔖 소개
+- 기존의 Java+DB프로젝트였던 영화예매 프로그램을 JSP로 업그레이드 구현한 프로젝트입니다.
+- MVC패턴을 기반으로 개발되었습니다.
+
+<br>
+
+## 🔖 제작기간 및 개발인원
 - 기간 : 2021.11 ~ 2021.11 (약 1주)
 - 인원 : 3명
-- 담당 역할 : 회원 CRUD 및 예매 내역 조회 / 담당 페이지 화면 구현
 <br>
 
-## <주요기능>
+## 🔖 주요기능
 
-#### * 메인화면
+#### 🔸 메인화면
 
 <img src="img/Main.png" width="600" height="360">
 
 - 상영중인 영화와 추천 영화가 표시됩니다.
 - 로그인 하지않으면 예매할 수 없으며, 검색만 가능합니다.
 
-#### * 영화검색
+#### 🔸 영화검색
 
 <img src="img/searchMain.png" width="540" height="330">
 
 <img src="img/movieSearch.png" width="540" height="330">
 
 - 검색된 단어와 DB의 Title을 비교해 일치한 값을 읽어와 화면에 보여줍니다.
+
+<details>
+<summary>코드보기</summary>
+<div markdown="1">
 
 ```jsp
 /// search.jsp
@@ -66,7 +77,12 @@ dtos2= service2.getAllMovieSearch();
         </div>
 ```
 
-#### * 회원가입 및 정보 수정
+</div>
+</details>
+		
+## 🔷 담당 기능
+		    
+#### 🔸 회원가입 및 정보 수정
 
 - ID는 PK지정으로 변경이 불가능하며, 비밀번호와 나이만 변경이 가능합니다.
 
@@ -74,7 +90,7 @@ dtos2= service2.getAllMovieSearch();
 
 <img src="img/memberUpdate.png" width="360" height="280">
 
-#### * 회원정보 및 예매 내역 조회
+#### 🔸 회원정보 및 예매 내역 조회
 
 - DB에 저장된 회원정보와 예매 내역을 조회합니다.
 - 정보수정을 누르면 수정 페이지로 이동합니다.
